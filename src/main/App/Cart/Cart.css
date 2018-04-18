@@ -1,0 +1,11 @@
+.cartList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.cartListWrap{
+    margin-bottom: 20px;
+}

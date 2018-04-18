@@ -25,7 +25,7 @@ export default class AuthService {
                  // eslint-disable-next-line
                 else if (json.message === "Authentication failed. Wrong password.") { throw 502; };
                  // eslint-disable-next-line
-                this.setToken(json.token) // Setting the token in localStorage
+                this.setToken(json.token, json.email, json.name) // Setting the token in localStorage
                 return Promise.resolve(json); // access json.body here
             })
     }
@@ -50,9 +50,11 @@ export default class AuthService {
         }
     }
 
-    setToken(idToken) {
+    setToken(idToken, email, name) {
         // Saves user token to localStorage
-        localStorage.setItem('id_token', idToken)
+        localStorage.setItem('id_token', idToken);
+        localStorage.setItem('email', email);
+        localStorage.setItem('name', name);
     }
 
     getToken() {
@@ -63,6 +65,8 @@ export default class AuthService {
     logout() {
         // Clear user token and profile data from localStorage
         localStorage.removeItem('id_token');
+        localStorage.removeItem('email');
+        localStorage.removeItem('name');
     }
 
     getProfile() {

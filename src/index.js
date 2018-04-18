@@ -7,12 +7,13 @@ import Login from "./main/Login/Login";
 
 
 ReactDOM.render(
+    <div>
     <Router>
         <div>
             <Route exact path="/" component={App} />
             <Route exact path="/login" component={Login} />
-
         </div>
-    </Router>,
+    </Router>
+    </div>,
     document.getElementById('app')
 );

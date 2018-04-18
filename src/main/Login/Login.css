@@ -1,3 +1,106 @@
-.paper{
-    text-align: center
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    font-weight: 500 !important; 
+    background-color: #0c131f;
+    background-image: url('https://cdn.pixabay.com/photo/2016/05/26/06/32/museum-1416573_1280.jpg');
+
+  
+    background-attachment: fixed;
+background-size: cover;
+background-position: center;
+
+}
+@media screen and (max-width: 992px) {
+    .root {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 200vh;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        font-weight: 500 !important; 
+        background-color: #0c131f;
+        /* background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/1-big-colorful-elephant-kovacs-anna-brigitta.jpg'); */
+        background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
+    }
+  }
+rootGrid{
+    flex-grow: 1;
+}
+.landscape{
+    text-shadow: 0px 0px 0px;
+    background: #FFEB3B;
+    font-size: 40px;
+    border: 4px solid #FFEB3B;
+    border-radius: 10px;
+    color: #03A9F4;
+}
+.rightIcon{
+    font-size: 20px;
+    margin-left: 8px;
+}
+.head1{
+      background-color: #fff;
+      text-align: center; 
+      color: #000;
+      font-family: 'Raleway', sans-serif;
+      font-size:50px;
+      text-shadow: 0 19px 38px rgba(0,0,0,0.30);
+}
+.head2{
+    
+    padding-bottom: 10px;
+     text-align: center; 
+     color: #000;
+     font-family: 'Roboto', sans-serif;
+     font-size:15px;
+     font-weight: 800;
+     text-shadow: 0 19px 38px rgba(0,0,0,0.30);
+}
+.root1{ 
+    height: 68vh;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+} 
+.root2{
+  border: 20px solid white;
+  height: 60vh;
+  opacity: 1;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  /* background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/1-big-colorful-elephant-kovacs-anna-brigitta.jpg'); */
+  background-image: initial;
+} 
+  h4{
+      color: red;
+      font-family: 'Roboto', sans-serif;
+  }
+  form{
+      width: 300px !important; 
+  }
+  .login {
+    padding-top: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .signup {
+    padding-top: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+.MuiPaper-elevation4-105 {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0) !important;
 }
